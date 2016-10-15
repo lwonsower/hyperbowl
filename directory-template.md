@@ -1,0 +1,32 @@
+```
+.
+|.gitignore
+|index.js
+|webpackconfig.json
+|etc...
+|--dist/
+|--server/
+   |--controllers/
+   |--helpers/
+   |--middlewares/
+   |--models
+   |--tests/
+|--src/
+   |--actions/
+   |--components/
+   |--reducers/
+   |--stores/
+   |--stylesheets/
+      |main.scss
+      |--base/
+      |--components/
+      |--layout/
+      |--pages/
+      |--themes/
+      |--abstracts/
+      |--vendors/
+   |--tests/
+   |--views/
+|
+|
+```
