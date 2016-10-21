@@ -40,9 +40,6 @@
   ],
   "author": "Team You Got Hack",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/yougothack/hyperbowl/issues"
-  },
   "homepage": "https://github.com/yougothack/hyperbowl#readme",
   "dependencies": {
     "autoprefixer": "6.4.1",
