@@ -5,6 +5,7 @@ module.exports = {
 
   "parserOptions": {
     "ecmaVersion": 6,
+    "esversion": 6,
     "sourceType": "module",
     "ecmaFeatures": {
       "impliedStrict": true,
