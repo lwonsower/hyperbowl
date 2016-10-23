@@ -6,4 +6,4 @@ eslint:
   config_file: .eslintrc.js
   ignore_file: .eslintignore
 
-fail_on_violations: true
+fail_on_violations: false
