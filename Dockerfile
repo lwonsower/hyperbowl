@@ -1,4 +1,4 @@
-FROM node:argon
+FROM node:boron
 
 RUN npm install webpack -g
 
@@ -18,5 +18,5 @@ COPY . /usr/src/app
 # Map app to Docker daemon
 
 EXPOSE 4000
-CMD ['npm', 'build']
-CMD [ '/usr/local/bin/node', './index.js' ]
+CMD [ 'npm', 'build' ]
+CMD [ 'npm', 'restart' ]
