@@ -4,20 +4,21 @@
   "description": "Instant hackathon",
   "main": "index.js",
   "scripts": {
-    "clean:build": "rimraf build",
-    "build:html": "node ./bin/buildHtml.js",
-    "prestart": "npm run clean:build",
-    "start": "webpack-dashboard -c cyan -- node dev-server.js",
-    "prebuild": "npm run clean:build",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.production.js --progress",
-    "postbuild": "npm run build:html",
+    "build:html": "node ./bin/buildHtml.js",
     "build:serve": "http-server build/client -p 3003 --cors -o",
-    "lint": "eslint config src/js/** --ext .js",
+    "clean:build": "rimraf build",
     "jscs": "jscs src/js/",
-    "typecheck": "flow",
+    "lint": "eslint config src/js/** --ext .js",
+    "postbuild": "npm run build:html",
+    "prebuild": "npm run clean:build",
+    "prestart": "npm run clean:build",
+    "restart": "node ./index.js",
+    "start": "webpack-dashboard -c cyan -- node dev-server.js",
     "test": "mocha --compilers js:babel-core/register,css:./test/unit/cssNullCompiler.js --require ./test/unit/testHelper.js --recursive ./test/unit",
     "test:watch": "npm run test -- --watch",
-    "tunnel": "lt --port 3000"
+    "tunnel": "lt --port 3000",
+    "typecheck": "flow"
   },
   "repository": {
     "type": "git",
@@ -119,5 +120,8 @@
     "presets": [
       "es2015"
     ]
+  },
+  "jshintConfig": {
+    "esversion": 6
   }
 }

@@ -7,16 +7,15 @@ const path       = require('path');
 const bodyParser = require('body-parser');
 const config     = require('./server/config.json');
 
-let port         = process.env.PORT || config.port;
+const port       = process.env.PORT || config.port;
 
 // MOUNT middleware
 app.use(express.static(path.join(__dirname, '/build/client')));
 app.use(bodyParser.json());
 
 //////////////    STATIC ROUTES    //////////////
-app.get('/', (req, res) => res.redirect('/index.html'));
+app.get('/', (req, res) => res.redirect('/js/application.js'));
 
 
 // START server
 http.listen(port, () => console.log('Serving at ', port));
-
