@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, '/build/client')));
 app.use(bodyParser.json());
 
 //////////////    STATIC ROUTES    //////////////
-app.get('/', (req, res) => res.redirect('/index.html'));
+app.get('/', (req, res) => res.redirect('/js/application.js'));
 
 
 // START server
