@@ -14,9 +14,10 @@ RUN npm install
 # Bundle app source
 
 COPY . /usr/src/app
+RUN npm run build
 
 # Map app to Docker daemon
 
-EXPOSE 4000
-CMD [ 'npm', 'build' ]
-CMD [ 'npm', 'restart' ]
+EXPOSE 8888
+ENTRYPOINT [ 'npm' ]
+CMD [ 'restart' ]
