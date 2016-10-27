@@ -1,0 +1,14 @@
+.navigation {
+	margin: none;
+	position: static;
+	height: 6em;
+	font-size: 1.5em;
+	background: linear-gradient(to bottom, #16425B, #1F282D);
+	border-top: 1px solid #1F282D;
+
+	li{
+		list-style: none;
+		display: inline;
+		padding: 0 1em 1em 0;
+	}
+}
