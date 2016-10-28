@@ -1,0 +1,29 @@
+@import './sass/components/navbar';
+
+//Space color palette
+$background: #1f282d;
+$teal: #d3fff8;
+$darkteal: #66d6d2;
+$lilac: #c1aaff;
+
+body {
+	background-color: $background;
+  margin: 0;
+  
+  font-family: 'Helvetica Neueu', sans-serif;
+  font-weight: bold;
+  color: $teal;
+
+	a {
+		color: $lilac;
+		text-decoration: none;
+
+		&:hover {
+			color: $lilac;
+		}
+
+		&:visited {
+			color: $darkteal;
+		}
+	}
+}

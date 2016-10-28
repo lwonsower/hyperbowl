@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
-export default class HelloWorld extends Component {
+export default class Code extends Component {
   render() {
     return (
       <div className="container text-center">
-        <h1>Hey this is where the app goes!</h1>
+        SOME CODE HERE
       </div>
     );
   }
