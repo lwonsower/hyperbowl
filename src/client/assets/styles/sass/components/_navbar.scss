@@ -43,8 +43,8 @@ $emerald: #16425b;
 }
 
 .logo {
-  width: 2em;
   position: absolute;
+  width: 2em;
   margin: .2em .3em;
 }
 
@@ -57,14 +57,14 @@ $emerald: #16425b;
       list-style: none;
       font-size: 1.6em;
       background: #1D1D1D;
-      padding: 0%;
+      padding: 0;
 
     }
   }
 
   .logo {
+    padding: 0.2em 0 0 0;
     position: absolute;
-    width: 0em;
-    padding: .2em 0em 0em 0%;
+    width: 0;
   }
 }
