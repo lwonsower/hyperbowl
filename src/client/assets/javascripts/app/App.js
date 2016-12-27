@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 
 const App = (props) => (
+  //test
   <div className="page-container">
     <Navbar />
     {React.cloneElement({...props}.children, {...props})}
